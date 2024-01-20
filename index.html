@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>some layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              navbg: " rgb(23 37 84)",
+              textcolor: "#fff",
+              headerbg: "rgb(3 105 161)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font">
+    <!-- navbar area -->
+    <nav class="bg-navbg p-5">
+      <div class="container mx-auto flex justify-between items-center lg:px-24 px-5">
+        <!-- left side -->
+        <div class="text-textcolor flex gap-10 items-center">
+          <div>
+            <img src="./assets/logo-3.png" alt="" />
+          </div>
+          <div>
+            <ul class="md:flex lg:flex justify-between gap-5 lg:text-xl font-bold hidden ">
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="space-x-5 flex">
+            <!-- <img src="./assets/more.png" class="md:hidden lg:hidden" alt=""> -->
+          <button class=" btn text-white lg:p-5 rounded-lg lg:border-2  lg:border-purple-900 hover:bg-orange-600 duration-1000 ">Login</button>
+          <button class="btn lg:bg-orange-600 md:bg-orange-600  lg:p-5 md:p-2 rounded-lg text-white hover:bg-transparent duration-1000 lg:border-2 md:bottom-2"> Get Staterd</button>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
